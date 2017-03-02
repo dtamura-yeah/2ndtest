@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<title>要素をクリックして移動させる</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+	</head>
+	<script type="text/javascript" src="test.js"></script>
+	</script>
+	<style TYPE="text/css">
+		h1{
+			color : blue;
+
+		}
+		mytag01{color : gray;font-size=10;}
+		.sub01{color : green;}
+		.div01{
+			position: absolute;
+			top:10;
+		  left:10;
+			color : red;
+			width: 100px;
+			padding: 10px 10px;
+			/* margin: 40px auto; */
+			background:#5cc;
+			border: 10px solid #ccc;
+		}
+		.div-block{
+			color : black;
+			width: 300px;
+			height: 100px;
+			padding: 10px 10px;
+			margin: 30px 30px;
+			background:#eeb;
+			border: 2px solid black;
+		}
+		.div02{
+			float: left;
+			width: 50;
+			padding: 0 0;
+			margin: 20px 20px;
+			border: 1px solid;
+		}
+		.div03{
+			float: left;
+			width: 50;
+			padding: 10px 10px;
+			margin: 20px 20px;
+			border: 1px solid;
+		}
+		#left-block{
+			float:left;
+			background: #eee;
+			height:500;
+		}
+		#main-block{
+			float:left;
+			padding: 50px 0px;
+			background: #fee
+		}
+	</style>
+
+	<body>
+		<h1 align="center"><mytag01>HTML</mytag01>学習のためのテスト</h1>
+		<h2 class="sub01" align="center">要素を<strong>マウス移動</strong>させる</h2>
+		<div id=left-block>left-block</div>
+		<div id=main-block>
+    	<div class="mover div01" id="div01">div01</div>
+			<div class="div-block">
+				<div class="mover div02" id="div02">div02</div>
+				<div class="mover div03" id="div03">div03</div>
+			</div>
+		</div>
+	</body>
+</html>
